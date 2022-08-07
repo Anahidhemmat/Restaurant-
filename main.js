@@ -22,15 +22,17 @@ document.addEventListener("scroll", function () {
     logo.style.height = "20px";
     header.classList.add("bg-black");
     header.classList.add("txt-white");
+    menu.style.color = "#fff";
   } else {
     logo.style.height = "35px";
     header.classList.remove("bg-black");
     header.classList.remove("txt-white");
+    menu.style.color = "#000";
   }
 });
 
 //slider
-let sliderImage = document.querySelector("img");
+let sliderImage = document.querySelector(".Gallery");
 let prevBtn = document.querySelector(".prev");
 let nextBtn = document.querySelector(".next");
 let imgSrcArray = [
